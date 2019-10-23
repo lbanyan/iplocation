@@ -1,2 +1,1 @@
-# iplocation
-IPIP库查询服务
+全球IP位置服务

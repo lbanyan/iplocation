@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.huya.iplocation</groupId>
+    <artifactId>iplocation</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>iplocation</name>
+    <description>全球IP位置服务</description>
+
+    <modules>
+        <module>api</module>
+    </modules>
+
+    <properties>
+        <mydog.version>1.0.0-SNAPSHOT</mydog.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github</groupId>
+                <artifactId>mydog-parent</artifactId>
+                <version>${mydog.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github</groupId>
+                <artifactId>mydog-common</artifactId>
+                <version>${mydog.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.ipip</groupId>
+                <artifactId>ipdb</artifactId>
+                <version>1.1.3</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
