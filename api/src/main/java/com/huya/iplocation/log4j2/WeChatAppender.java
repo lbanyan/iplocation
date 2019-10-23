@@ -35,11 +35,11 @@ public class WeChatAppender extends AbstractAppender {
 
     private static final Integer OA_APP_AGENT_ID = 1000035;
 
-    private static final String SEND_MSG_ENDPOINT = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={}";
+    private static final String SEND_MSG_ENDPOINT = "*********************************************";
 
-    private static final String DMX_ENDPOINT = "https://dmx-jingwei.huya.com/weixin/getToken.do";
+    private static final String DMX_ENDPOINT = "********************************************";
 
-    private static final List<String> EMPLOYEES = Arrays.asList("dw_zhangxingping1");
+    private static final List<String> EMPLOYEES = Arrays.asList("*********************");
 
     private static final String PROJECT_NAME = "全球IP位置服务";
 
