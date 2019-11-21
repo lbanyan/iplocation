@@ -59,6 +59,7 @@ public class IpipClient {
             while ((len = in.read(buffer)) != -1) {
                 out.write(buffer, 0, len);
             }
+            out.flush();
             String etag1 = "sha1-" + sha1(file);
             if (!etag.equals(etag1)) {
                 throw new RuntimeException("IPIP下载文件不完整");
